@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>μ-td変換ツール | 比増殖速度と倍化時間の変換</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>μ-td変換ツール</h1>
+            <p class="subtitle">比増殖速度（μ）と倍化時間（td）の変換</p>
+        </header>
+
+        <main>
+            <div class="formula-section">
+                <div class="formula-box">
+                    <h3>変換公式</h3>
+                    <div class="formula">
+                        <p>μ = ln(2) / td ≈ 0.693 / td</p>
+                        <p>td = ln(2) / μ ≈ 0.693 / μ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="converter-section">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="mu-input">比増殖速度 (μ)</label>
+                        <input type="number" id="mu-input" placeholder="例: 0.1" step="any" min="0">
+                        <span class="unit">h⁻¹</span>
+                    </div>
+                    <div class="conversion-arrow">⇄</div>
+                    <div class="input-box">
+                        <label for="td-input">倍化時間 (td)</label>
+                        <input type="number" id="td-input" placeholder="例: 6.93" step="any" min="0">
+                        <span class="unit">h</span>
+                    </div>
+                </div>
+
+                <div class="calculation-display">
+                    <div id="calculation-result"></div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>使用方法</h3>
+                <ul>
+                    <li>μ（比増殖速度）またはtd（倍化時間）のいずれかに値を入力してください</li>
+                    <li>もう一方の値が自動的に計算されます</li>
+                    <li>正の数値のみ入力可能です</li>
+                    <li>μの単位は h⁻¹、tdの単位は h です</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 μ-td変換ツール | 生物学研究支援</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
