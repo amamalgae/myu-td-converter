@@ -1,0 +1,40 @@
+# Robots.txt for μ-td変換ツール
+# 生物学研究支援ツール
+
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://example.com/sitemap.xml
+
+# 主要検索エンジン用の詳細設定
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# 望ましくないボット
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 特定のファイルを除外（必要に応じて）
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /*.pdf$
+
+# 特別な指示
+# このサイトは教育・研究目的のツールです
+# 商業利用や過度なアクセスはお控えください

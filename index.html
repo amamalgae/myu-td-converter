@@ -3,60 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>μ-td変換ツール | 比増殖速度と倍化時間の変換</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>比増殖速度(μ)⇔倍化時間(td)変換ツール | 生物学研究支援</title>
+    <meta name="description" content="微生物の比増殖速度(μ)と倍化時間(td)を瞬時に相互変換。生物学・微生物学研究者向けの無料計算ツール。正確なln(2)値を使用し、リアルタイム計算で研究効率を向上。">
+    <meta name="keywords" content="比増殖速度,倍化時間,μ,td,変換,計算,微生物,生物学,研究ツール,バイオ,培養,増殖,研究支援,無料ツール">
+    <meta name="author" content="生物学研究支援ツール">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/">
+    
+    <!-- OGP Tags -->
+    <meta property="og:title" content="比増殖速度(μ)⇔倍化時間(td)変換ツール">
+    <meta property="og:description" content="微生物の比増殖速度と倍化時間を瞬時に相互変換する生物学研究者向け無料ツール">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="μ-td変換ツール">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="比増殖速度(μ)⇔倍化時間(td)変換ツール">
+    <meta name="twitter:description" content="微生物の比増殖速度と倍化時間を瞬時に相互変換する生物学研究者向け無料ツール">
+    <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebApplication",
+      "name": "比増殖速度(μ)⇔倍化時間(td)変換ツール",
+      "description": "微生物の比増殖速度(μ)と倍化時間(td)を瞬時に相互変換する生物学研究者向けの無料計算ツール",
+      "url": "https://example.com/",
+      "applicationCategory": "ScienceApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "生物学研究支援ツール"
+      },
+      "keywords": "比増殖速度,倍化時間,μ,td,変換,計算,微生物,生物学,研究ツール",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true,
+      "featureList": [
+        "リアルタイム双方向変換",
+        "正確なln(2)値使用",
+        "入力値検証機能",
+        "レスポンシブデザイン",
+        "計算過程表示"
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header role="banner">
             <h1>μ-td変換ツール</h1>
             <p class="subtitle">比増殖速度（μ）と倍化時間（td）の変換</p>
+            <nav role="navigation" aria-label="ページナビゲーション">
+                <ul class="nav-links">
+                    <li><a href="#converter" aria-label="変換ツールに移動">変換ツール</a></li>
+                    <li><a href="#formula" aria-label="変換公式に移動">公式</a></li>
+                    <li><a href="#usage" aria-label="使用方法に移動">使用方法</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <main>
-            <div class="formula-section">
-                <div class="formula-box">
-                    <h3>変換公式</h3>
-                    <div class="formula">
-                        <p>μ = ln(2) / td ≈ 0.693 / td</p>
-                        <p>td = ln(2) / μ ≈ 0.693 / μ</p>
+        <!-- Header Advertisement (728x90) -->
+        <div class="ad-space ad-header">
+            <div class="ad-placeholder">
+                <span>広告スペース 728x90</span>
+                <small>Google AdSense</small>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <main class="main-content" role="main">
+                <!-- 変換公式セクション -->
+                <section id="formula" class="formula-section" aria-labelledby="formula-heading">
+                    <article class="formula-box">
+                        <h2 id="formula-heading">変換公式</h2>
+                        <div class="formula" role="img" aria-label="変換公式: μイコール自然対数2割るtd、tdイコール自然対数2割るμ">
+                            <p>μ = ln(2) / td ≈ 0.693 / td</p>
+                            <p>td = ln(2) / μ ≈ 0.693 / μ</p>
+                        </div>
+                        <div class="formula-description">
+                            <h3>公式の説明</h3>
+                            <ul>
+                                <li><strong>μ (比増殖速度)</strong>: 微生物の単位時間あたりの増殖率 (h⁻¹ または day⁻¹)</li>
+                                <li><strong>td (倍化時間)</strong>: 細胞数が2倍になるのに必要な時間 (h または day)</li>
+                                <li><strong>ln(2)</strong>: 自然対数2 ≈ 0.693147180559945</li>
+                                <li><strong>単位変換</strong>: 1 day = 24 hours</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- 変換ツールセクション -->
+                <section id="converter" class="converter-section" aria-labelledby="converter-heading">
+                    <h2 id="converter-heading" class="sr-only">μ-td変換計算機</h2>
+                    
+                    <!-- 単位選択 -->
+                    <div class="unit-selector">
+                        <h3>時間単位選択</h3>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="time-unit" value="hours" checked>
+                                <span class="radio-button"></span>
+                                時間 (hours)
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="time-unit" value="days">
+                                <span class="radio-button"></span>
+                                日 (days)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-group" role="application" aria-label="比増殖速度と倍化時間の変換計算機">
+                        <div class="input-box">
+                            <label for="mu-input">比増殖速度 (μ)</label>
+                            <input type="number" id="mu-input" placeholder="例: 0.1" step="any" min="0" aria-describedby="mu-help">
+                            <span class="unit" id="mu-unit" aria-hidden="true">h⁻¹</span>
+                            <div id="mu-help" class="sr-only">比増殖速度を入力してください。</div>
+                        </div>
+                        <div class="conversion-arrow" aria-hidden="true">⇄</div>
+                        <div class="input-box">
+                            <label for="td-input">倍化時間 (td)</label>
+                            <input type="number" id="td-input" placeholder="例: 6.93" step="any" min="0" aria-describedby="td-help">
+                            <span class="unit" id="td-unit" aria-hidden="true">h</span>
+                            <div id="td-help" class="sr-only">倍化時間を入力してください。</div>
+                        </div>
+                    </div>
+
+                    <div class="calculation-display" aria-live="polite" aria-label="計算結果">
+                        <div id="calculation-result"></div>
+                    </div>
+                </section>
+
+                <!-- 使用方法セクション -->
+                <section id="usage" class="info-section" aria-labelledby="usage-heading">
+                    <article>
+                        <h2 id="usage-heading">使用方法</h2>
+                        <ol>
+                            <li>時間単位（時間または日）を選択してください</li>
+                            <li>μ（比増殖速度）またはtd（倍化時間）のいずれかに値を入力してください</li>
+                            <li>もう一方の値が自動的に計算されます</li>
+                            <li>正の数値のみ入力可能です</li>
+                            <li>単位は選択に応じて h⁻¹/h または day⁻¹/day で表示されます</li>
+                        </ol>
+                        
+                        <h3>適用分野</h3>
+                        <ul>
+                            <li>微生物学研究</li>
+                            <li>発酵工学</li>
+                            <li>バイオプロセス工学</li>
+                            <li>細胞培養</li>
+                            <li>環境微生物学</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+
+            <!-- Sidebar Advertisement (300x250) -->
+            <aside class="sidebar" role="complementary" aria-label="サイドバー">
+                <div class="ad-space ad-sidebar" aria-label="広告">
+                    <div class="ad-placeholder">
+                        <span>広告スペース</span>
+                        <span>300x250</span>
+                        <small>Google AdSense</small>
                     </div>
                 </div>
-            </div>
-
-            <div class="converter-section">
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="mu-input">比増殖速度 (μ)</label>
-                        <input type="number" id="mu-input" placeholder="例: 0.1" step="any" min="0">
-                        <span class="unit">h⁻¹</span>
-                    </div>
-                    <div class="conversion-arrow">⇄</div>
-                    <div class="input-box">
-                        <label for="td-input">倍化時間 (td)</label>
-                        <input type="number" id="td-input" placeholder="例: 6.93" step="any" min="0">
-                        <span class="unit">h</span>
+                
+                <div class="ad-space ad-sidebar" aria-label="広告">
+                    <div class="ad-placeholder">
+                        <span>広告スペース</span>
+                        <span>300x250</span>
+                        <small>Google AdSense</small>
                     </div>
                 </div>
-
-                <div class="calculation-display">
-                    <div id="calculation-result"></div>
+                
+                <!-- 関連リンク -->
+                <div class="related-links">
+                    <h3>関連ツール</h3>
+                    <ul>
+                        <li><a href="#" rel="noopener">細胞濃度計算機</a></li>
+                        <li><a href="#" rel="noopener">培地調製計算機</a></li>
+                        <li><a href="#" rel="noopener">希釈系列計算機</a></li>
+                    </ul>
                 </div>
-            </div>
+            </aside>
+        </div>
 
-            <div class="info-section">
-                <h3>使用方法</h3>
-                <ul>
-                    <li>μ（比増殖速度）またはtd（倍化時間）のいずれかに値を入力してください</li>
-                    <li>もう一方の値が自動的に計算されます</li>
-                    <li>正の数値のみ入力可能です</li>
-                    <li>μの単位は h⁻¹、tdの単位は h です</li>
-                </ul>
+        <!-- Footer Advertisement (728x90) -->
+        <div class="ad-space ad-footer">
+            <div class="ad-placeholder">
+                <span>広告スペース 728x90</span>
+                <small>Google AdSense</small>
             </div>
-        </main>
+        </div>
 
-        <footer>
-            <p>&copy; 2025 μ-td変換ツール | 生物学研究支援</p>
+        <footer role="contentinfo">
+            <div class="footer-content">
+                <p>&copy; 2025 μ-td変換ツール | 生物学研究支援</p>
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <ul>
+                        <li><a href="#" rel="noopener">プライバシーポリシー</a></li>
+                        <li><a href="#" rel="noopener">利用規約</a></li>
+                        <li><a href="#" rel="noopener">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
     </div>
 
